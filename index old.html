@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collin W</title>
+  <script src="https://kit.fontawesome.com/2c47143655.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body style="margin-left: 0px; margin-right: 0px; margin-top: 0px; margin-bottom: 0px;">
+  <div class="title-bar">
+    <a href="/" class="titlebutton selected">Home</a>
+    <a href="/projects" class="titlebutton">Projects</a>
+    <a href="/links" class="titlebutton">Links</a>
+  </div>
+
+  <div class="main">
+    <div class="container">
+      <div class="text">
+        <div style="margin-bottom: 6vw;">
+          <h1 style="margin-bottom: 2vh;">
+            Hi! I'm <span class="accent">Collin Wentzien</span>
+          </h1>
+          <span class="nospace" style="color: #B1B1B1; font-size: 1.8vw; font-weight: 450; margin-bottom: 50px;"><i
+              class="fa-solid fa-hammer"></i> MAKER&emsp;·&emsp;<i class="fa-solid fa-pen-nib"></i> DESIGNER&emsp;·&emsp;<i class="fa-solid fa-lightbulb"></i> ENGINEER</span>
+        </div>
+        <div>
+          <button style="padding: 1.5vw 3vw;" class="blue-button" onclick="myProjects()">MY PROJECTS&emsp;<i
+              class="fa-solid fa-chevron-down"></i></button>
+          <a href="/links" style="margin-left: 8px; padding: 1.5vw 3vw;" class="white-button">ALL LINKS&emsp;<i
+            class=" fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="image">
+        <img style="max-width: 100%; height: auto;" src="/photos/main-photo.png" alt="Collin Wentzien">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2 style="margin-left: 7vw; margin-bottom: 1vw;" id="projects">All Projects</h2>
+    <table class="button-grid">
+      <tr>
+        <td><button class="square-button cyclet">cyclet</button></td>
+        <td><button class="square-button sdbike">Self Driving Bike</button></td>
+        <td><button class="square-button prelude">Honda Prelude</button></td>
+        <td><button class="square-button quizza">Quizza</button></td>
+        <td><button class="square-button qar">QR Code Car</button></td>
+      </tr>
+      <tr>
+        <td><button class="square-button codeart">Code:ART</button></td>
+        <td><button class="square-button rocket">Rocket</button></td>
+        <td><button class="square-button pc">PC</button></td>
+        <td><button class="square-button bike">A (not so) Electric Bike</button></td>
+        <td><button class="square-button timer2">Track Timer v2</button></td>
+      </tr>
+      <tr>
+        <td><button class="square-button bio">Biosphere</button></td>
+        <td><button class="square-button shields">3D Face Shields</button></td>
+        <td><button class="square-button computer">8 Bit Computer</button></td>
+        <td><button class="square-button scoreboard">Scoreboard v2</button></td>
+        <td><button class="square-button timer">Track Timer v1</button></td>
+      </tr>
+      <tr>
+        <td><button class="square-button watch">Smartwatch</button></td>
+        <td><button class="square-button pbm2">Phone by Mako v2</button></td>
+        <td><button class="square-button pbm">Phone by Mako</button></td>
+        <td><button class="square-button scoreboard">Scoreboard v1</button></td>
+        <td><button class="square-button calc">Calculator</button></td>
+      </tr>
+      <tr>
+        <td><button class="square-button binary">Binary Computer</button></td>
+      </tr>
+    </table>
+  </div>
+</body>
+  
+</html>

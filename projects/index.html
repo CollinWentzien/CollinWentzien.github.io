@@ -1,0 +1,2780 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collin W  |  Projects</title>
+  <script src="https://kit.fontawesome.com/2c47143655.js" crossorigin="anonymous"></script>
+  <script src="scroll.js"></script>
+</head>
+
+<body style="margin-left: 0px; margin-right: 0px; margin-top: 0px; margin-bottom: 0px;">
+
+
+  <div class="container" id="scroll-container">
+
+    
+    <div class="title-bar">
+      <a href="/" class="titlebutton">Home</a>
+      <a href="/projects" class="titlebutton selected">Projects</a>
+      <a href="/links" class="titlebutton">Links</a>
+    </div>
+    
+    <div class="item" id="welcome" style="justify-content: center; align-items: center;">
+      <div class="content-center">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Welcome to My Projects!</h1>
+
+        <h2 style="font-weight: 500;">Scroll or use the buttons to view everything I've created so far.</h2>
+        
+        <div class="photo-button">
+          <button style="padding: 1.5vw 3vw; margin-right: 1vw;" class="white-button" onclick="newest()">NEWEST PROJECTS&emsp;<i class="fa-solid fa-chevron-down"></i></button>
+          <button style="padding: 1.5vw 3vw;" class="white-button" onclick="oldest()">OLDEST PROJECTS&emsp;<i class="fa-solid fa-angles-down"></i></button>
+        </div>
+        
+        <h3 style="margin-top: 4vh; margin-bottom: 0px;"><span class="star">*</span> - highlighted project</h3>
+        <h3 style="margin-top: 4px;"><span class="inprog">*</span> - project in progress</h3>
+        
+      </div>
+    </div>
+
+    <div class="item" id="lumle">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh; font-family:brigendis; font-weight:400;">LUMLE <span class="inprog">*</span></h1>
+
+        <p style="margin-bottom: 1vh;">College time! To prepare to move into a dorm, I did what every aspiring college student does and looked up “top 50 college necessities” on WikiHow. One item that kept popping up was a calendar or planner, which was a big of a problem because I’d rather spend hours developing something to do it for me than to just take five minutes to do it myself. Lumle was born.</p>
+
+        <p style="margin-bottom: 1vh;">This project was designed with simplicity at the forefront, although I didn’t want to sacrifice any usability. Therefore, Lumle displays the time, weather, alarms, and the day’s events streamed from Google Calendar, all on a 2.5 inch monochrome OLED display.</p>
+
+        <p style="margin-bottom: 1vh;">At the heart of Lumle is an ESP8266, which I used because of its built-in WiFi and fast clock speed. Inside the device, there is also a touch sensor and photoresistor (light sensor) to detect the brightness of the room. If the lights are turned off, Lumle will automatically turn off the display. Tapping on the back of Lumle while it is in this sleeping state will bring up a fullscreen clock for a few seconds before shutting off again, and tapping a second time while the clock is active will bring up the regular display.</p>
+      </div>
+      <div class="content-right">
+        <div class="lumle-slide">
+          <div class="numbertext">1 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/lumle/IMG_3246.JPG">
+          <div class="text">Final (ish) version of Lumle, will post photos of stand soon, might also CNC a metal enclosure</div>
+        </div>
+
+        <div class="lumle-slide">
+          <div class="numbertext">2 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/lumle/IMG_3100.JPG">
+          <div class="text">First prototype</div>
+        </div>
+
+        <div class="lumle-slide">
+          <div class="numbertext">3 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/lumle/IMG_3101.JPG">
+          <div class="text">Animation testing</div>
+        </div>
+
+        <div class="lumle-slide">
+          <div class="numbertext">4 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/lumle/IMG_3151.JPG">
+          <div class="text">Google Calendar implementation</div>
+        </div>
+
+        <div class="lumle-slide">
+          <div class="numbertext">5 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/lumle/IMG_3162.JPG">
+          <div class="text">Events shown with correct time and only on current day</div>
+        </div>
+
+        <div class="lumle-slide">
+          <div class="numbertext">6 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/lumle/IMG_3243.JPG">
+          <div class="text">Electronics in 3D printed case with larger OLED display</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 27)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 27)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="cyclet">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh; font-family: 'Kumbh Sans'; font-weight: 450;">cyclet <span class="star">*</span><span class="inprog">*</span></h1>
+
+        <p style="margin-bottom: 1vh;">This is my longest and most complex project to date.</p>
+
+        <p style="margin-bottom: 1vh;">After the success of “A (not so) Electric Bike,” which you can see further down the list, I wanted to make a similar device that was universally compatible with all bikes.</p>
+
+        <p style="margin-bottom: 1vh;">I began work on Cyclet -- named after the word “applet,” or a utiilty program with simple functions -- in 2021. I kept a lot of original features like the front and back light, turn signals, and speedometer, while removing useless features like the rotary encoder and dual displays. To operate Cyclet, users can tap two touch sensors on the front of the device. I used tap sensors to minimize the amount of holes in the case to improve waterproofing.</p>
+
+        <p style="margin-bottom: 1vh;">Aside from the 3D printed (later to be injection molded) case, I also designed a full custom circuit board designed around the ATmega 4809, wrote the software, designed and created the website, and designed the packaging with foam inserts.</p>
+
+        <p style="margin-bottom: 5vh;">While the future of Cyclet is uncertain, I have plans to continue it... soon.</p>
+        <div class="photo-button">
+          <a href="https://www.cyclet.us" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">VISIT WEBSITE&emsp;<i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="cyclet-slide">
+          <div class="numbertext">1 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/bike.jpg">
+          <div class="text">Completed latest prototype of Cyclet</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">2 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/front_display.jpg">
+          <div class="text">Frontal view of Cyclet</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">3 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_0000.JPG">
+          <div class="text">Packaging design idea</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">4 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_0928.JPG">
+          <div class="text">First prototype on breadboard, running modified code of "A (not so) Electric Bike"</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">5 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_0929.JPG">
+          <div class="text">GPS modules</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">6 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_0943.JPG">
+          <div class="text">First packaging design iteration</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">7 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_0952.JPG">
+          <div class="text">First logo design</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">8 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_0953.JPG">
+          <div class="text">First website design</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">9 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_0956.JPG">
+          <div class="text">Cyclet prototype with cost sheet</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">10 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_0986.JPG">
+          <div class="text">First PCB testing</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">11 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_0993.JPG">
+          <div class="text">First PCB working (YAY)</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">12 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_0994.JPG">
+          <div class="text">Packaging design on template</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">13 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_1064.JPG">
+          <div class="text">Second PCB design, cutout was made to fit the power switch</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">14 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_1065.JPG">
+          <div class="text">Second PCB arrived</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">15 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_1081.JPG">
+          <div class="text">Second prototype fitting together perfectly *chef's kiss*</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">16 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_1082.JPG">
+          <div class="text">GPS attached to back</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">17 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_1083.JPG">
+          <div class="text">Completed package with lights out front</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">18 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_1126.JPG">
+          <div class="text">Alternate display, substituted altitude for max speed</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">19 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_1216.JPG">
+          <div class="text">First bike ride with everything working inside tiny package</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">20 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_2852.JPG">
+          <div class="text">Third PCB ordered, converted all through-hole components to surface mounted</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">21 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_2859.JPG">
+          <div class="text">Two completed Cyclet devices, with back lights and turn signal switches!</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">22 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_6894.JPG">
+          <div class="text">New website design</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">23 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_6895.JPG">
+          <div class="text">Main Cyclet unit only</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">24 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_6896.JPG">
+          <div class="text">Close up</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">25 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_6897.JPG">
+          <div class="text">Bottom of Cyclet: four smaller holes allowed for handlebar clamps to be installed, two larger holes passed through back light and turn signal switch</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">26 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_6901.JPG">
+          <div class="text">Testing silicone handlebar strap holders, weren't very durable</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">27 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_6923.JPG">
+          <div class="text">Cyclet inside</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">28 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7464.JPG">
+          <div class="text">Experimenting with graphic LCD: better visibility but slower response time</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">29 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7498.JPG">
+          <div class="text">Testing battery monitor</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">30 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7501.JPG">
+          <div class="text">Uploading code</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">31 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7514.JPG">
+          <div class="text">Turn signal switch changed to use touch sensors</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">32 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7515.JPG">
+          <div class="text">Cyclet inside</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">33 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7528.JPG">
+          <div class="text">Cyclet inside new packaging concept with custom cut foam inserts</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">34 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7901.PNG">
+          <div class="text">New mobile website prototype</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">35 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7966.JPG">
+          <div class="text">Sanding, painting, and finishing 3D printed enclosure</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">36 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7968.JPG">
+          <div class="text">Cyclet with new packaging</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">37 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7969.JPG">
+          <div class="text">Taking photos for website and other platforms</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">38 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7980.JPG">
+          <div class="text">New packaging design</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">39 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/IMG_7982.JPG">
+          <div class="text">New packaging design</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">40 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/square.png">
+          <div class="text">New Cyclet logo</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">41 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/topright.jpg">
+          <div class="text">Cyclet latest prototype</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">42 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/front left.jpg">
+          <div class="text">Cyclet latest prototype</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">43 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/top.jpg">
+          <div class="text">Cyclet latest prototype</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">44 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/switch.jpg">
+          <div class="text">Cyclet latest prototype</div>
+        </div>
+
+        <div class="cyclet-slide">
+          <div class="numbertext">45 / 45</div>
+          <img loading="lazy" class="slideimg" src="/photos/cyclet/front.jpg">
+          <div class="text">Cyclet latest prototype</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 26)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 26)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="quizza">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh; color: #0a5f4f;">Quizza <span class="star">*</span></h1>
+
+        <p style="margin-bottom: 1vh;">Despite wanting to own a business and create products that will one day end up in people’s homes across the world, there are two things I hate: monopolies and subscription services. And Quizlet just so happens to check both those boxes.</p>
+
+        <p style="margin-bottom: 1vh;">After the popular online study site introduced stricter paywalls for its features, my friend Ryland and I began developing our own version that would be available to anyone at no cost. We implemented many similar features such as flashcards and games so new users wouldn’t feel lost.</p>
+
+        <p style="margin-bottom: 1vh;">We also decided to cater our version directly to schools, and therefore sorted “sets” (which are groups of terms, for example English Vocab 2nd Semester) by class specific to our school. Additionally, we added the ability to collaborate on sets so students wouldn’t need to make their own if one already existed.</p>
+
+        <p style="margin-bottom: 5vh;">After designing and coding this website in only a matter of days, we published it and then advertised it to our school. Within days we had hundreds of users, and many students still use Quizza today, over two years since its inception.</p>
+        <div class="photo-button">
+          <a href="https://www.quizza.org" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">VISIT WEBSITE&emsp;<i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="quizza-slide">
+          <div class="numbertext">1 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/home.png">
+          <div class="text">Current Quizza homepage</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">2 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/lghs.png">
+          <div class="text">Current school specific home page</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">3 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/exampleset.png">
+          <div class="text">Current study set page</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">4 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3428.JPG">
+          <div class="text">Trying out logo designs</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">5 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3472.JPG">
+          <div class="text">Working on getting rudimentary website working</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">6 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3473.JPG">
+          <div class="text">Google Sheet tracking to-dos and issues</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">7 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3474.JPG">
+          <div class="text">Finalizing logo design</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">8 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3475.JPG">
+          <div class="text">Designing first iteration of the UI</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">9 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3476.JPG">
+          <div class="text">UI implementation in website</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">10 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3477.JPG">
+          <div class="text">Classes page completed</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">11 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3478.JPG">
+          <div class="text">Sets pages completed</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">12 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3480.JPG">
+          <div class="text">Flyers designed, hung around school campus (slight shade thrown at Quizlet)</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">13 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3491.JPG">
+          <div class="text">First sets created and tested on Quizza</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">14 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3493.PNG">
+          <div class="text">Ironing out bugs on mobile website</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">15 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/IMG_3513.PNG">
+          <div class="text">More UI bugs</div>
+        </div>
+
+        <div class="quizza-slide">
+          <div class="numbertext">16 / 16</div>
+          <img loading="lazy" class="slideimg" src="/photos/quizza/quizza.jpg">
+          <div class="text">Final logo design</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 25)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 25)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="rtr">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">@reporttheride <span class="inprog">*</span></h1>
+
+        <p style="margin-bottom: 1vh;">My interest in cars started back in 2021 and hasn’t subsided since. Today, I have three main projects I focus on.</p>
+
+        <p style="margin-bottom: 1vh;">Honda Prelude: This was my first car that I purchased in October of 2022. I’ve done plenty of work on it, such as replacing the thermostat, rewiring the radio, replacing all lug studs, replacing the crankshaft sensor, and most notably, wrapping the car white (similar to painting but with a giant vinyl sticker).</p>
+
+        <p style="margin-bottom: 1vh;">Mercedes Benz S600: I bought this car in January of 2024 because it has a V12 engine also found in the multi-million dollar Pagani Zonda C12. While this project is still work-in-progress, I hope to be able to put the engine in a different car shell to create my own “supercar.”</p>
+
+        <p style="margin-bottom: 1vh;">Photography: I started car photography in late 2022 when my friend got a cheap Canon camera. Since then, I’ve invested in professional phootgraphy equipment and done dozens of paid photoshoots for clients.</p>
+
+        <p style="margin-bottom: 5vh;">You can see my work and car projects at the link below.</p>
+        <div class="photo-button">
+          <a href="https://www.instagram.com/reporttheride/" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">LEARN MORE&emsp;<i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 1 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/DSC02960.jpg">
+          <div class="text">Prelude after wrap, how it currently sits</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 2 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_3544.JPG">
+          <div class="text">Day one of owning the Prelude! (Oct 2022)</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 3 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_3546.JPG">
+          <div class="text">With my friends :)</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 4 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_4108.jpeg">
+          <div class="text">Home with new car</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 5 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_3578.JPG">
+          <div class="text">Fixing radio short circuit which disabled the rear lights from working</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 6 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_1603.jpeg">
+          <div class="text">Trying to fix power steering</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 7 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_3594.JPG">
+          <div class="text">Driving</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 8 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_3633.JPG">
+          <div class="text">Hood wrapped</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 9 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_3634.JPG">
+          <div class="text">Wrapping trunk</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 10 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_3649.JPG">
+          <div class="text">Lug studs before (with spikes)</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 11 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_3686.JPG">
+          <div class="text">Lug studs after, brake calipers painted too</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 12 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_3697.JPG">
+          <div class="text">Outside Classic Burger</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 13 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_5261.JPG">
+          <div class="text">Polishing headlights</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 14 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_5642.JPG">
+          <div class="text">Doors wrapped</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 15 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_5779.JPG">
+          <div class="text">Sanding to prep for wrap</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 16 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_5789.JPG">
+          <div class="text">Took the Prelude to school to get help wrapping from the graphic design teacher Mr. Czech. First morning ft. Matt</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 17 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_5793.JPG">
+          <div class="text">Prelude at school, was a pretty large attraction</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 18 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_5808.JPG">
+          <div class="text">First day of wrapping completed (yes I drove home like this and blue taped my license plate on)</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 19 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_5823.JPG">
+          <div class="text">Rear quarterpanel and roof wrapped</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 20 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_6060.jpeg">
+          <div class="text">My friends and I finishing wrap</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 21 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/wrap.JPG">
+          <div class="text">Finishing second quarterpanel at midnight the night before junior prom</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 22 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_6068.jpeg">
+          <div class="text">Prelude almost finished before prom! Got the white suit to match</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 23 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_6004.JPG">
+          <div class="text">Wrap finally completed</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Honda Prelude: 24 / 24</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/prelude/IMG_8597.JPG">
+          <div class="text">One year anniversary</div>
+        </div>
+
+
+
+        <div class="rtr-slide">
+          <div class="numbertext">Mercedes S600: 1 / 5</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/mercedes/IMG_9645.JPG">
+          <div class="text">Mercedes and Prelude (more Mercedes content available at the link to the left)</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Mercedes S600: 2 / 5</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/mercedes/IMG_9609.JPG">
+          <div class="text">Picking up the Mercedes over 6 hours away</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Mercedes S600: 3 / 5</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/mercedes/IMG_9626.JPG">
+          <div class="text">Home!</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Mercedes S600: 4 / 5</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/mercedes/IMG_0104.JPG">
+          <div class="text">Engine bay with M120 V12, same engine as the Pagani Zonda C12 (multi-million dollar car)</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Mercedes S600: 5 / 5</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/mercedes/IMG_1430.JPG">
+          <div class="text">Engine out!</div>
+        </div>
+
+
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 1 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/_DSC0921.jpg">
+          <div class="text">Integra Type R</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 2 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/_DSC0993.jpg">
+          <div class="text">Integra Type R</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 3 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/_DSC8329.jpg">
+          <div class="text">Los Gatos Luxury Cars</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 4 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/DSC04894.jpeg">
+          <div class="text">Mazda Miata</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 5 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/DSC05049.jpeg">
+          <div class="text">Mazda Miata</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 6 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/DSC07290-Edit-Edit.jpg">
+          <div class="text">Porsche Fremont Cars & Coffee</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 7 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/DSC07429 copy.jpg">
+          <div class="text">Los Gatos Luxury Cars</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 8 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/DSC07741.jpg">
+          <div class="text">Porsche 911 Turbo S</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 9 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/DSC07961.jpg">
+          <div class="text">Porsche 911 Turbo S</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 10 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/DSC08661.jpg">
+          <div class="text">Ferrari FXXK</div>
+        </div>
+
+        <div class="rtr-slide">
+          <div class="numbertext">Photography: 11 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/reporttheride/pics/DSC09449.jpg">
+          <div class="text">Ferrari FXXK Evo</div>
+        </div>
+        
+
+        <a class="prev" onclick="plusSlides(-1, 24)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 24)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="sdbike">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Self Driving Bike</h1>
+
+        <p style="margin-bottom: 1vh;">I built this project my junior year for a class called Advanced Science Research. This project was my first complex Raspberry Pi project, my first time thoroughly working with Python, and my first time working with custom object detection.</p>
+
+        <p style="margin-bottom: 1vh;">To cut costs, I used a miniature bicycle instead of a full-scale bike. The back wheel was controlled by a brushed DC motor, while the steering was controlled by a servo motor for accuracy. To view obstacles in the way, a webcam was hooked up to the Raspberry Pi.</p>
+
+        <p style="margin-bottom: 1vh;">Since I didn’t have much experience when it came to software, I decided to do all processing on my computer. This meant that the Raspberry Pi only worked as a middleman: it would stream the video feed to my computer, where obstacles were detected, and motor instructions were sent back to the Pi.</p>
+
+        <p style="margin-bottom: 5vh;">With this project, I won two Honorable Mentions at the Synopsis Science Faire. And while it wasn’t as advanced as I had initially hoped, it was my first introduction to the world of machine learning.</p>
+        <div class="photo-button">
+          <a href="https://www.youtube.com/watch?v=KdrKisBBCsc" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">WATCH VIDEO&emsp;<i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="sdbike-slide">
+          <div class="numbertext">1 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_5077.JPG">
+          <div class="text">Completed bike (DC motor battery, power switches, camera, stepper motor)</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">2 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_5078.JPG">
+          <div class="text">Completed bike (Raspberry Pi, 5V battery, DC motor, ESC)</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">3 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4655.JPG">
+          <div class="text">Raspberry Pi and ESC mount</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">4 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4657.JPG">
+          <div class="text">Motor and gear</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">5 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4659.JPG">
+          <div class="text">Gear and motor mount prototypes</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">6 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4660.JPG">
+          <div class="text">3D printing holders</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">7 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4651.JPG">
+          <div class="text">Finished motor mount and gearing</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">8 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4652.JPG">
+          <div class="text">Finished steering motor and gearing</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">9 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4737.JPG">
+          <div class="text">Writing Python code at school (ft. Ryland)</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">10 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4781.JPG">
+          <div class="text">Cone detection</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">11 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4790.JPG">
+          <div class="text">Cone distance detection, measured by how close to the bottom of the screen the cone was</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">12 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4872.JPG">
+          <div class="text">Performing avoidance tests at school</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">13 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_4922.JPG">
+          <div class="text">Final testing, used ethernet cord to ensure fastest connection between computer and bike</div>
+        </div>
+
+        <div class="sdbike-slide">
+          <div class="numbertext">14 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/sdbike/IMG_5757.jpeg">
+          <div class="text">Award ceremony!</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 23)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 23)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="qrcar">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">QR Code Car</h1>
+
+        <p style="margin-bottom: 1vh;">Marketing is one of those things that I usually hate, but if it’s cool then I like it. In this case it’s cool so I like it.</p>
+
+        <p style="margin-bottom: 1vh;">To get more people interested in our school investing club that we ran, we decided to advertise our club in a unique way. The previous year, we put out flyers with the “stonks” meme and a QR code, which gained a fair amount of traction, but we knew we could do better.</p>
+
+        <p style="margin-bottom: 1vh;">This year, we got a remote controlled car and stuck a QR code on the top. We didn’t add any context, hoping that people’s curiosity would make them want to scan the code.</p>
+
+        <p style="margin-bottom: 1vh;">It worked. People would flock around the car to scan the code, and because the remote fit in my pocket, no one knew who was driving it. By the end of the week, we had almost 100 members join the club.</p>
+
+        <p style="margin-bottom: 5vh;">Over the next two years, we used the car to advertise different things, including Quizza (see above).</p>
+        <div class="photo-button">
+          <a href="https://www.youtube.com/watch?v=EcAWOIjg-_k" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">WATCH VIDEO&emsp;<i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="qrcar-slide">
+          <div class="numbertext">1 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/quizza.JPG">
+          <div class="text">Finished QR code car (original)</div>
+        </div>
+
+        <div class="qrcar-slide">
+          <div class="numbertext">2 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/IMG_1294.JPG">
+          <div class="text">RC car stripped to bare minimum</div>
+        </div>
+
+        <div class="qrcar-slide">
+          <div class="numbertext">3 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/IMG_3051.JPG">
+          <div class="text">Car with QR code</div>
+        </div>
+
+        <div class="qrcar-slide">
+          <div class="numbertext">4 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/IMG_3127.JPG">
+          <div class="text">Car at club faire</div>
+        </div>
+
+        <div class="qrcar-slide">
+          <div class="numbertext">5 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/IMG_0608.jpeg">
+          <div class="text">Car driving at school</div>
+        </div>
+
+        <div class="qrcar-slide">
+          <div class="numbertext">6 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/IMG_0609.jpeg">
+          <div class="text">Car driving at school</div>
+        </div>
+
+        <div class="qrcar-slide">
+          <div class="numbertext">7 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/IMG_0611.jpeg">
+          <div class="text">Car driving at school</div>
+        </div>
+
+        <div class="qrcar-slide">
+          <div class="numbertext">8 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/IMG_0613.jpeg">
+          <div class="text">Car driving at school</div>
+        </div>
+
+        <div class="qrcar-slide">
+          <div class="numbertext">9 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/IMG_0614.jpeg">
+          <div class="text">Confused students</div>
+        </div>
+
+        <div class="qrcar-slide">
+          <div class="numbertext">10 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/new.png">
+          <div class="text">QR car revamped with RGB LEDs and a speaker</div>
+        </div>
+
+        <div class="qrcar-slide">
+          <div class="numbertext">11 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/qrcar/IMG_7582.PNG">
+          <div class="text">Control panel for lights and sounds of new QR car</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 22)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 22)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="rocket">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh; color: #fca103;">Rocket</h1>
+
+        <p style="margin-bottom: 1vh;">In winter 2021, Ryland and I decided to enter into a high school engineering competition. After looking around for a bit, we stumbled up the American Rocketry Challenge, and decided to try it. We recruited Joe Sanchez and Jaehu Lee to help us as well, as they expressed interest into the newborn “club.”</p>
+
+        <p style="margin-bottom: 1vh;">We then spent December through March designing, building, and testing our rocket. It had to travel up to exactly 835 feet, fly for 41 to 44 seconds, and carry two eggs. It was not an easy task. Jaehu, Joe, and Ryland worked on the simulations, while I designed the flight controller that would release the parachute. Ryland later implemented code to detect the best time to release the parachute, so that we met our altitude target and our time target as accurately as possible.</p>
+
+        <p style="margin-bottom: 1vh;">However, when it came to launching, we ran into some problems. Because we live in California, laws about launching model rockets are extremely strict, and we were unable to launch our rocket.</p>
+
+        <p style="margin-bottom: 5vh;">Despite this, it was still a very fun project, and we all enjoyed the bonding time spent together.</p>
+        <div class="photo-button">
+          <a href="https://www.youtube.com/watch?v=5wZD6Ij_v40" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">WATCH VIDEO&emsp;<i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="rocket-slide">
+          <div class="numbertext">1 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1622.JPG">
+          <div class="text">Final rocket, dubbed Kinzler I</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">2 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1642.JPG">
+          <div class="text">Final flight controller and parachute</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">3 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1270.JPG">
+          <div class="text">First rocket prototype</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">4 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1278.JPG">
+          <div class="text">First flight controller prototype, included Teensy with SD card reader, barometer, IMU (accelerometer and gyroscope), LED, buzzer</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">5 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1426.JPG">
+          <div class="text">Writing code for flight controller</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">6 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1429.JPG">
+          <div class="text">First prototype in case, used linear servos to remove pins that would release parachute via rubber bands</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">7 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1450.JPG">
+          <div class="text">Second rocket prototype</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">8 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1453.JPG">
+          <div class="text">Fins mounted with glue with help of 3D printed stand</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">9 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1470.JPG">
+          <div class="text">CAD of second prototype of flight controller</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">10 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1540.JPG">
+          <div class="text">Rocket sanded before painting</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">11 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1560.JPG">
+          <div class="text">Third prototype of flight controller, electronics soldered</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">12 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1561.JPG">
+          <div class="text">Replaced linear servo with single rotating servo, new flight controller contained inside nose cone fairing</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">13 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1553.JPG">
+          <div class="text">Rocket after painting</div>
+        </div>
+
+        <div class="rocket-slide">
+          <div class="numbertext">14 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/rocket/IMG_1556.JPG">
+          <div class="text">Testing flight controller and launch setup</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1, 21)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 21)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="codeart">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Code:ART</h1>
+        
+        <p style="margin-bottom: 1vh;">Back in May 2020, I was contacted by one of my dad’s friends, Ben Flatau. He asked if I was interested in helping out with a project for an upcoming art faire called Code Art. Along with about 10 other people, we worked on a display that used split flaps, spinning boxes, and floppy disks.</p>
+        <p style="margin-bottom: 1vh;">The theme of our project was IO, or input and output. We created a large sign with 108 split flaps on one side and 24 rotating boxes on the other side. When people rotated the boxes, the split flaps updated to display either text or colors. The goal was to rotate all the boxes in the correct order to display a secret message.
+          <p style="margin-bottom: 5vh;">Since its creation and exposition in Palo Alto's Code:ART festival in 2021, this project has been on display at both the Computer History Museum in Mountain View and OpenSauce 2024.</p>
+        <div class="photo-button">
+          <a href="https://bflatauarchitect.com/project/solaire" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">LEARN MORE&emsp;<i
+              class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="codeart-slide">
+          <div class="numbertext">1 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/codeart/IMG_1161.JPG">
+          <div class="text">Code:ART 2021</div>
+        </div>
+        <div class="codeart-slide">
+          <div class="numbertext">2 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/codeart/IMG_1163.JPG">
+          <div class="text">Code:ART 2021</div>
+        </div>
+        <div class="codeart-slide">
+          <div class="numbertext">3 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/codeart/IMG_1012.JPG">
+          <div class="text">Wooden frame</div>
+        </div>
+        <div class="codeart-slide">
+          <div class="numbertext">4 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/codeart/IMG_1014.JPG">
+          <div class="text">Shift register boards for split flaps</div>
+        </div>
+        <div class="codeart-slide">
+          <div class="numbertext">5 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/codeart/IMG_1165.JPG">
+          <div class="text">Am I Art?</div>
+        </div>
+        <div class="codeart-slide">
+          <div class="numbertext">6 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/codeart/IMG_1166.JPG">
+          <div class="text">Rotating boxes that controlled the front</div>
+        </div>
+        <div class="codeart-slide">
+          <div class="numbertext">7 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/codeart/IMG_1168.JPG">
+          <div class="text">Inside the project</div>
+        </div>
+        <div class="codeart-slide">
+          <div class="numbertext">8 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/codeart/IMG_1169.JPG">
+          <div class="text">108 split flap displays</div>
+        </div>
+        <div class="codeart-slide">
+          <div class="numbertext">9 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/codeart/IMG_1280.JPG">
+          <div class="text">OpenSauce 2024</div>
+        </div>
+        <div class="codeart-slide">
+          <div class="numbertext">10 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/codeart/IMG_1284.JPG">
+          <div class="text">OpenSauce 2024</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 19)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 19)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="marble">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Marble Machine</h1>
+
+        <p style="margin-bottom: 1vh;">During the summer right after my freshman year, I got hooked on watching Wintergatan’s marble machine videos. The mechanical engineering behind the multiple mechanisms all working together fascinated me, and I decided I wanted to build my own marble run.</p>
+
+        <p style="margin-bottom: 1vh;">This wasn’t the first time a marble machine caught my interest. When I was a kid, I was at our local airport when a flight got cancelled. Instead of sitting on my mom’s phone, I wandered off and found a marble machine in an empty part of the airport, and proceeded to watch it until the next flight arrived.</p>
+
+        <p style="margin-bottom: 1vh;">I made this track as simple as possible. I 3D printed the supports while using aluminum wire for the track that would shortly prove too malleable. To recirculate the metal marbles, I used a bike chain and printed little scoops to pick up the balls with. The speed of the ball dispenser could be changed with code as I used a stepper motor that was also practically silent.</p>
+
+        <p style="margin-bottom: 1vh;">While I still haven’t finished this project due to marbles deciding they’d have more fun off the track than on it, I still hope to one day complete it.</p>
+      </div>
+      <div class="content-right">
+        <div class="marble-slide">
+          <div class="numbertext">1 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/marble/IMG_1091.JPG">
+          <div class="text">Marble machine in its current state</div>
+        </div>
+
+        <div class="marble-slide">
+          <div class="numbertext">2 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/marble/IMG_0464.JPG">
+          <div class="text">Inspiration for the project: a custom automata project for school (that I also designed and built myself)</div>
+        </div>
+
+        <div class="marble-slide">
+          <div class="numbertext">3 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/marble/IMG_0689.JPG">
+          <div class="text">CAD of motorized marble lift</div>
+        </div>
+
+        <div class="marble-slide">
+          <div class="numbertext">4 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/marble/IMG_0683.JPG">
+          <div class="text">Marble lift completed</div>
+        </div>
+
+        <div class="marble-slide">
+          <div class="numbertext">5 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/marble/IMG_0692.JPG">
+          <div class="text">Top portion of track and divider completed</div>
+        </div>
+
+        <div class="marble-slide">
+          <div class="numbertext">6 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/marble/IMG_0754.JPG">
+          <div class="text">Back and forth portion of marble run</div>
+        </div>
+
+        <div class="marble-slide">
+          <div class="numbertext">7 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/marble/IMG_1090.JPG">
+          <div class="text">Marble run with 3 dividers and loop (which worked about 5% of the time)</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 17)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 17)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="bike">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">A (not so) Electric Bike <span class="star">*</span></h1>
+
+        <p style="margin-bottom: 1vh;">In March of 2021 I got an email from Arduino, promoting a competition they were holding. Interested, I quickly thought of a project idea. Since I had been biking a lot, sometimes at night, I wanted to design an all-in-one lighting and information system.</p>
+
+        <p style="margin-bottom: 1vh;">The electronics were fun on this one. I used a knock-off Arduino MEGA that was tiny so it could fit in a small case. Taking inspiration off my scoreboard, I used addressable LEDs to make the front and back lights. These had more than one upside, as while being super easy to wire, also allowed me to animate the turn signals on the bike. I added a GPS module to give me speed and distance, and displayed the information on two OLED displays. However, my favorite part of this build were the power, light, and horn buttons, for which I used tactile stainless steel buttons. And let me just say that they were soooo satisfying to press. I finished this project by 3D printing a case that matched my bike to put it all together.</p>
+
+        <p style="margin-bottom: 5vh;">While I didn’t win, I had a great time building it and used it all the time... that was until my bike got stolen.</p>
+        <div class="photo-button">
+          <a href="https://www.youtube.com/watch?v=p7DILHsOUxs" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">WATCH VIDEO&emsp;<i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="bike-slide">
+          <div class="numbertext">1 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0124.JPG">
+          <div class="text">Finished bike system</div>
+        </div>
+
+        <div class="bike-slide">
+          <div class="numbertext">2 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0032.JPG">
+          <div class="text">All parts laid out</div>
+        </div>
+
+        <div class="bike-slide">
+          <div class="numbertext">3 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0044.JPG">
+          <div class="text">3D printed case sanded</div>
+        </div>
+
+        <div class="bike-slide">
+          <div class="numbertext">4 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0048.JPG">
+          <div class="text">3D printed case painted and polished, buttons installed</div>
+        </div>
+
+        <div class="bike-slide">
+          <div class="numbertext">5 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0046.JPG">
+          <div class="text">Both cases attached to bike</div>
+        </div>
+
+        <div class="bike-slide">
+          <div class="numbertext">6 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/build1.png">
+          <div class="text">Installing buttons and Arduino to cases</div>
+        </div>
+
+        <div class="bike-slide">
+          <div class="numbertext">7 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/build2.png">
+          <div class="text">Installing GPS and rotary encoder</div>
+        </div>
+
+        <div class="bike-slide">
+          <div class="numbertext">8 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/build3.png">
+          <div class="text">All wires soldered inside bike</div>
+        </div>
+
+        <div class="bike-slide">
+          <div class="numbertext">9 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0074.png">
+          <div class="text">Finished UI</div>
+        </div>
+
+        <div class="bike-slide">
+          <div class="numbertext">10 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0147.JPG">
+          <div class="text">Video published for Arduino Challenge</div>
+        </div>
+
+        <div class="bike-slide">
+          <div class="numbertext">11 / 11</div>
+          <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0144.jpeg">
+          <div class="text">Finished bike system at night</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 15)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 15)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="timer2">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Track Timer v2 <span class="star">*</span></h1>
+
+        <p style="margin-bottom: 1vh;">As the next track and field season rolled around, I wanted to bring back my track timer. I had one big complaint about it, though: setup time. Because it used a laser beam to detect an athlete, I had to precisely position the laser beam, sometimes in bright sunlight. Not fun.</p>
+
+        <p style="margin-bottom: 1vh;">For this version, I decided to eliminate the laser-photoresistor combo and switch to using a LiDAR sensor. This came with two advantages: one, it didn’t need to be precisely positioned, and two, it could detect distance. Detecting distance meant that I could differentiate between different lanes on the track, as lane number one would be much closer than lane number eight. This meant that I could set the timer up so that it would only count athletes in a specific lane, preventing false flags from others crossing the finish line.</p>
+
+        <p style="margin-bottom: 1vh;">I also reworked the UI to use a mini OLED display, giving me more flexibility when designing the interface. I kept automatic start mode while adding a manual start mode, and also added a mode that would give splits for cross country athletes.</p>
+
+        <p style="margin-bottom: 5vh;">This project came out incredibly and fixed basically every issue with the first version. I used it plenty during high school, as did the coaches and other athletes.</p>
+        <div class="photo-button">
+          <a href="https://www.youtube.com/watch?v=6_SI3QzjOwY" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">WATCH VIDEO&emsp;<i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="timer2-slide">
+          <div class="numbertext">1 / 7</div>
+          <img class="slideimg" src="/photos/timer2/IMG_0012.JPG">
+          <div class="text">Track timer start module with menu and speaker</div>
+        </div>
+
+        <div class="timer2-slide">
+          <div class="numbertext">2 / 7</div>
+          <img class="slideimg" src="/photos/timer2/IMG_0013.JPG">
+          <div class="text">Track timer finish module with LiDAR sensor</div>
+        </div>
+
+        <div class="timer2-slide">
+          <div class="numbertext">3 / 7</div>
+          <img class="slideimg" src="/photos/timer2/IMG_2952.JPG">
+          <div class="text">Start module with amp, speaker, and 5V step-down module</div>
+        </div>
+
+        <div class="timer2-slide">
+          <div class="numbertext">4 / 7</div>
+          <img class="slideimg" src="/photos/timer2/IMG_2959.JPG">
+          <div class="text">Start module with Arduino, wireless, and OLED screen</div>
+        </div>
+
+        <div class="timer2-slide">
+          <div class="numbertext">5 / 7</div>
+          <img class="slideimg" src="/photos/timer2/IMG_2962.JPG">
+          <div class="text">Finished start module</div>
+        </div>
+
+        <div class="timer2-slide">
+          <div class="numbertext">6 / 7</div>
+          <img class="slideimg" src="/photos/timer2/IMG_0014.JPG">
+          <div class="text">Start module main menu</div>
+        </div>
+
+        <div class="timer2-slide">
+          <div class="numbertext">7 / 7</div>
+          <img class="slideimg" src="/photos/timer2/IMG_1328.JPG">
+          <div class="text">Full system at track</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 14)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 14)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="brieframe">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh; font-family: 'Comfortaa';"><span style="background: -webkit-linear-gradient(rgba(0,255,143,1), rgba(49,93,255,1)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">b</span><span>rieframe</span></h1>
+
+        <p style="margin-bottom: 1vh;">I’ve always wanted to make a device that people use every day. One idea that came into mind was a smart screen, similar to Alexa or Google Home.</p>
+
+        <p style="margin-bottom: 1vh;">I started by designing the UI layout in Illustrator. I added lots of apps: health, notes, reminders, news, etc. that would be mirrored off a phone. To display this information, I added two “views:” one that would display the information on 6 tiles, and another that would display the apps in a slideshow format.</p>
+
+        <p style="margin-bottom: 1vh;">I decided that project would not only just be catered to everyday people, but to businesses as well. I added a third “view” that included a note section, a room number section, and a public WiFi information section.</p>
+
+        <p style="margin-bottom: 1vh;">While it was fun developing the first prototype of this device, I soon ran into issues. The microcontroller I was using was way too slow to run the large display. Additionally, I was using a library that only supported bitmap graphics (no anti-aliasing), meaning that everything appeared grainy.</p>
+      </div>
+      <div class="content-right">
+        <div class="brieframe-slide">
+          <div class="numbertext">1 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/IMG_2910.JPG">
+          <div class="text">Latest prototype in tile mode, data not live</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">2 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/IMG_2867.JPG">
+          <div class="text">First UI prototype, dark mode</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">3 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/IMG_2878.JPG">
+          <div class="text">Second UI prototype: changed weather, changed stocks, added health</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">4 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/IMG_2896.JPG">
+          <div class="text">Full screen slideshow mode, notes app</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">5 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/IMG_2897.JPG">
+          <div class="text">Full screen slideshow mode, news app</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">6 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/IMG_2902.JPG">
+          <div class="text">Office mode</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">7 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/IMG_2907.JPG">
+          <div class="text">Case prototype, used wood for front and 3D printed silver side</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">8 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/Brieframe App.jpg">
+          <div class="text">First iPhone app prototype</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">9 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/IMG_0565.PNG">
+          <div class="text">Second app prototype</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">10 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/UINewDark.jpg">
+          <div class="text">New dynamic tile design concept</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">11 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/UIRoom.jpg">
+          <div class="text">New office mode concept</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">12 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/WebDesign.jpg">
+          <div class="text">Website design (still one of my favorites)</div>
+        </div>
+
+        <div class="brieframe-slide">
+          <div class="numbertext">13 / 13</div>
+          <img loading="lazy" class="slideimg" src="/photos/brieframe/WebBuy.jpg">
+          <div class="text">Website buy page design</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 13)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 13)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="biosphere">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Biosphere</h1>
+
+        <p style="margin-bottom: 1vh;">It’s always fascinated me to see how many sensors exist for a wide range of applications. So when by freshman year biology class told us we had to each build a miniature biosphere, I decided to fit as many sensors into it as I could.</p>
+
+          <p style="margin-bottom: 1vh;">I used a temperature sensor, humidity sensor, soil moisture sensor, water level sensor, air pressure sensor, light sensor, and a UV light sensor, all connected to an Arduino MEGA. Originally, I was planning to use an ESP8266 to send all the information to a web server, but decided that was overly complex for my needs. Instead, to display all the information, I used a small OLED screen that would animate between all the information using bitmap images and text.</p>
+
+            <p style="margin-bottom: 1vh;">It was really fun to work with all those sensors, and to anyone making fun of me for “getting the same grade as everyone else,” I got extra credit muahahaha</p>
+      </div>
+      <div class="content-right">
+        <div class="biosphere-slide">
+          <div class="numbertext">1 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/biosphere/IMG_2429.JPG">
+          <div class="text">Completed biosphere</div>
+        </div>
+
+        <div class="biosphere-slide">
+          <div class="numbertext">2 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/biosphere/IMG_2397.JPG">
+          <div class="text">Testing sensors with ESP8266</div>
+        </div>
+
+        <div class="biosphere-slide">
+          <div class="numbertext">3 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/biosphere/temp.png">
+          <div class="text">Temperature info display</div>
+        </div>
+
+        <div class="biosphere-slide">
+          <div class="numbertext">4 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/biosphere/humid.png">
+          <div class="text">Humidity info display</div>
+        </div>
+
+        <div class="biosphere-slide">
+          <div class="numbertext">5 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/biosphere/water.png">
+          <div class="text">Water level info display</div>
+        </div>
+
+        <div class="biosphere-slide">
+          <div class="numbertext">6 / 6</div>
+          <img loading="lazy" class="slideimg" src="/photos/biosphere/soil.png">
+          <div class="text">Soil moisture info display</div>
+        </div>
+        
+
+        <a class="prev" onclick="plusSlides(-1, 12)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 12)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="masks">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh; color: #017bbf;">3D Face Shields <span class="star">*</span></h1>
+
+          <p style="margin-bottom: 1vh;">Coming from a family of doctors and having an immuno-comprimised dad, I quickly began to understand the importance of staying safe during the COVID pandemic.</p>
+
+        <p style="margin-bottom: 1vh;">In an attempt to help, I used my 3D printer to print face shields for hospitals. I purposely chose a simple design to minimize costs and speed up production: one single 3D printed headpiece paired with a transparent sheet of overhead projector film.</p>
+
+        <p style="margin-bottom: 1vh;">Over the next few months, I was able to produce hundreds of face shields that I distributed to multiple hospitals. While doing so, I was contacted by the San Jose Earthquakes, who wrote an article about my “business.” They also got me in contact with another hospital to which I donated almost a hundred face shields to.</p>
+
+        <p style="margin-bottom: 5vh;">You can visit the website I made and read the San Jose Earthquakes article below.</p>
+        <div class="photo-button">
+          <a href="https://sites.google.com/view/3dfaceshields/home" style="padding: 1.5vw 3vw; margin-right: 1vw;" class="white-button" target="_blank">VISIT WEBSITE&emsp;<i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://www.sjearthquakes.com/news/feature-fourteen-year-old-collin-wentzien-3d-prints-face-shields-healthcare-work" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">READ ARTICLE&emsp;<i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="masks-slide">
+          <div class="numbertext">1 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1859.JPG">
+          <div class="text">Shields on table</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">2 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1856.JPG">
+          <div class="text">Shields on table</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">3 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1861.JPG">
+          <div class="text">Printing shields with my Anet A8 printer</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">4 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1865.JPG">
+          <div class="text">Transparent overhead projector film used for shield cover</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">5 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1867.JPG">
+          <div class="text">Detail shot of shield</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">6 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1868.JPG">
+          <div class="text">Detail shot of shield</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">7 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1869.JPG">
+          <div class="text">Detail shot of shield</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">8 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1872.JPG">
+          <div class="text">Middle school me wearing the shield (ft. covid hair)</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">9 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1877.JPG">
+          <div class="text">To attach the transparent film to the headpiece, I hole punched the film according to a template I created</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">10 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1885.jpeg">
+          <div class="text">Screenshot of the website on my phone</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">11 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1911.JPG">
+          <div class="text">Around 100 shields on the "production line"</div>
+        </div>
+        <div class="masks-slide">
+          <div class="numbertext">12 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/masks/IMG_1913.JPG">
+          <div class="text">3D printer printing even more shields</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 11)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 11)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="8bc">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh; font-family: eightbc; font-weight: 400; color: #7c70da;">8 BIT COMPUTER</h1>
+
+        <p style="margin-bottom: 1vh;">I've always liked vintage computers. I began collecting them in 5th grade after receiving an iMac G3 from an old teacher. I went on to collect an original Macintosh, IBM typewriters, Apple II systems, and dozens of other vintage electronics.</p>
+        
+        <p style="margin-bottom: 1vh;">In January 2020, I saw a video posted by Ben Eater about an 8-bit computer that he made. I was instantly hooked. I went on to recreate it with only the bare components necessary for the computer to function. I also created a custom PCB to hold all the components inside a custom case.</p>
+          
+        <p style="margin-bottom: 5vh;">This project was dubbed “8BC,” standing for 8-bit computer (it also sounds like ABC). Despite never having a VGA output, the computer was able to display information to the user through LEDs and a liquid crystal display. The user was also able to input data through a keyboard.</p>
+
+        <div class="photo-button">
+          <a href="https://www.youtube.com/watch?v=oCf208d9icw" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">WATCH VIDEO&emsp;<i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="8bc-slide">
+          <div class="numbertext">1 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2201.JPG">
+          <div class="text">8BC with text output on character LCD</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">2 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_1767.JPG">
+          <div class="text">Chips laid out on breadboard</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">3 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_1771.JPG">
+          <div class="text">Debugging 65c02 with Arduino interrupts</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">4 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_1794.JPG">
+          <div class="text">More debugging with variable time clock (breadboard on right)</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">5 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2055.JPG">
+          <div class="text">Website concept</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">6 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2124.JPG">
+          <div class="text">3D printing case</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">7 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2065.JPG">
+          <div class="text">3D printed case prototype</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">8 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2125.JPG">
+          <div class="text">8BC wiring, able to print hard-coded text and light up LEDs</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">9 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2126.JPG">
+          <div class="text">Testing VGA output with a TinyFPGA</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">10 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2127.JPG">
+          <div class="text">Console output concept</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">11 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2194.JPG">
+          <div class="text">More chips ordered</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">12 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2241.JPG">
+          <div class="text">8BC working with keyboard input</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">13 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2352.JPG">
+          <div class="text">Custom PCB designed, ordered, and assembled, worked with keyboard and character LCD</div>
+        </div>
+
+        <div class="8bc-slide">
+          <div class="numbertext">14 / 14</div>
+          <img loading="lazy" class="slideimg" src="/photos/eightbc/IMG_2353.JPG">
+          <div class="text">Website live</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 10)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 10)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="sb2">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh; font-family: sb; font-weight: 500;"><span style="color:#d1352a">Score</span><span style="color:#f2b933">board </span><span style="color: #d1352a">v2</span></h1>
+
+        <p style="margin-bottom: 1vh;">Shortly after I completed my first scoreboard, the director of my soccer club contacted me asking if I’d like to build a second scoreboard for their new futsal arena. I told him that unfortunately I was too busy and didn’t really want to... who am I kidding of course I jumped on that opportunity :)</p>
+
+        <p style="margin-bottom: 1vh;">This scoreboard was a bit more ambitious. It would be very similar to the last scoreboard but be double the size (4’ x 2’) and had to be a bit more user friendly so coaches and parents could learn how to use the board quickly.</p>
+
+        <p style="margin-bottom: 1vh;">The hardest part was by far machining the front of the scoreboard. I again went with wood as the material because cutting metal just wasn’t feasable, but I had to take CNC classes at Maker Nexus to even be allowed to cut out the front. After that, though, the rest wasn’t too different. I used the addressable LEDs again because of their simplicity and 3D printed diffusers for the digits.</p>
+
+        <p style="margin-bottom: 1vh;">I really enjoyed this project, primarily because I had already faced most challenges while building my first scoreboard.</p>
+      </div>
+      <div class="content-right">
+        <div class="sb2-slide">
+          <div class="numbertext">1 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_0997.JPG">
+          <div class="text">Finished scoreboard</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">2 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1650.JPG">
+          <div class="text">All parts laid out</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">3 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1657.JPG">
+          <div class="text">Period digit soldered, all other digits used 5 LEDs per segment</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">4 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1658.JPG">
+          <div class="text">Large and small digit template</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">5 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1706.JPG">
+          <div class="text">Digits laid out on wooden scoreboard front</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">6 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1709.JPG">
+          <div class="text">Power socket with fuse</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">7 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1711.JPG">
+          <div class="text">Scoreboard frame glued and screwed together</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">8 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1713.JPG">
+          <div class="text">Assembling more digits</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">9 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1715.JPG">
+          <div class="text">Controller case 3D printed and painted</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">10 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1721.JPG">
+          <div class="text">Controller running updated scoreboard code, derived from first version</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">11 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1722.JPG">
+          <div class="text">Diffuser designs</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">12 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1728.JPG">
+          <div class="text">Me with scoreboard :)</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">13 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1733.JPG">
+          <div class="text">All digits soldered, parts laid out</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">14 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1741.JPG">
+          <div class="text">Scoreboard front finally CNC'd</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">15 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1757.JPG">
+          <div class="text">Scoreboard painted</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">16 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1760.JPG">
+          <div class="text">Vinyl labels installed</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">17 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_1761.png">
+          <div class="text">Large digit testing</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">18 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_0990.JPG">
+          <div class="text">Horn!</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">19 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_0991.JPG">
+          <div class="text">Installing diffusers</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">20 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_0993.JPG">
+          <div class="text">Installing components: Arduino MEGA, horn relay and horn, power supply, power socket</div>
+        </div>
+
+        <div class="sb2-slide">
+          <div class="numbertext">21 / 21</div>
+          <img loading="lazy" class="slideimg" src="/photos/sb2/IMG_0995.JPG">
+          <div class="text">Scoreboard lit up!</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 9)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 9)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="timer">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Track Timer</h1>
+
+        <p style="margin-bottom: 1vh;">I was scrolling through Hackster.io for project ideas when I came across a track timer that a user had made for super cheap. Liking the idea, I ordered some parts and made my own.</p>
+
+        <p style="margin-bottom: 1vh;">This device consisted of three modules: a start module, a finish module, and a laser module. The start module would say “ready, set,” and then play a start tone while starting the timer. Meanwhile, at the end of the track, the laser module would point a beam at the photoresistor in the finish module, and when an athlete crossed the beam, the finish module would wirelessly tell the start timer to stop the timer.</p>
+
+        <p style="margin-bottom: 1vh;">Like any project, I improved on the project based on what I knew I wanted as both a cross country and track runner. IPrimarily, I added modes to timer so athletes could time sprints or miles.</p>
+
+        <p style="margin-bottom: 1vh;">I finished this project right as the track season began at my middle school. My friends and I all had a blast trying to beat each others’ records.</p>
+      </div>
+      <div class="content-right">
+        <div class="timer-slide">
+          <div class="numbertext">1 / 5</div>
+          <img loading="lazy" class="slideimg" src="/photos/timer/IMG_1332.JPG">
+          <div class="text">Start module on</div>
+        </div>
+
+        <div class="timer-slide">
+          <div class="numbertext">2 / 5</div>
+          <img loading="lazy" class="slideimg" src="/photos/timer/IMG_1330.JPG">
+          <div class="text">Start module off</div>
+        </div>
+
+        <div class="timer-slide">
+          <div class="numbertext">3 / 5</div>
+          <img loading="lazy" class="slideimg" src="/photos/timer/img1.png">
+          <div class="text">Finish module with laser pointing on light sensors (photoresistors)</div>
+        </div>
+
+        <div class="timer-slide">
+          <div class="numbertext">4 / 5</div>
+          <img loading="lazy" class="slideimg" src="/photos/timer/img2.png">
+          <div class="text">Menu on start module</div>
+        </div>
+
+        <div class="timer-slide">
+          <div class="numbertext">5 / 5</div>
+          <img loading="lazy" class="slideimg" src="/photos/timer/img3.png">
+          <div class="text">Lap mode display</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 8)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 8)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="watch">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Smart Watch</h1>
+
+        <p style="margin-bottom: 1vh;">One of my favorite saying is “if you can’t afford it, build it for cheaper.”</p>
+
+        <p style="margin-bottom: 1vh;">I’ve lived by this saying through my projects; for example, the scoreboard. So when I wanted an Apple Watch but couldn’t afford one... well you get the idea.</p>
+
+        <p style="margin-bottom: 1vh;">I designed this watch to be as simple yet feature-filled as possible. I wanted it to have a color screen and bluetooth, while not being too big. A lot of DIY watches I had seen just sort of sandwiched all the components on top of each other, which led to a very thick watch.</p>
+
+        <p style="margin-bottom: 1vh;">Instead, I decided to put all the components next to each other. This led to the watch being only around 12mm thick while still boasting all of the features I described earlier.</p>
+
+        <p style="margin-bottom: 1vh;">I designed the UI to be even simpler, using only two buttons to control it. I used bitmap images everywhere to make navigation easier, and added an always on display to make the most out of the OLED screen.</p>
+
+        <p style="margin-bottom: 1vh;">The only large caveat was the battery life, which was abismal, and while I began work on a second version, I never finished it.</p>
+      </div>
+      <div class="content-right">
+        <div class="watch-slide">
+          <div class="numbertext">1 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/watch.JPG">
+          <div class="text">Completed smart watch</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">2 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1228.JPG">
+          <div class="text">All parts: charger, Arduino Pro Mini, bluetooth, OLED display, case</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">3 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1270.JPG">
+          <div class="text">Button module soldered</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">4 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1270.png">
+          <div class="text">OLED display test</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">5 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1271.JPG">
+          <div class="text">Components soldered inside first case prototype</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">6 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1273.JPG">
+          <div class="text">Components inside second case prototype with thicker walls and rounded edges</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">7 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1274.JPG">
+          <div class="text">Watch connected to serial adapter to upload code</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">8 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1275.JPG">
+          <div class="text">Info screen!</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">9 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/menu1.png">
+          <div class="text">Home screen menu</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">10 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/menu2.png">
+          <div class="text">Settings menu</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">11 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/menu3.png">
+          <div class="text">Incoming call display</div>
+        </div>
+
+        <div class="watch-slide">
+          <div class="numbertext">12 / 12</div>
+          <img loading="lazy" class="slideimg" src="/photos/watch/menu4.png">
+          <div class="text">Default clock screen</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 7)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 7)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="item" id="pbm2">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Phone by Mako v2</h1>
+
+        <p style="margin-bottom: 1vh;">While version 1 wasn’t exactly a breakthrough in cellular technology, it did teach us a lot about how to run a company and how to make a successful product. Hoping to redesign our product with these new lessons in mind, we began work on Phone by Mako version 2.</p>
+
+        <p style="margin-bottom: 1vh;">To make assembly simpler, Phone by Mako v2 would use a custom printed circuit board (PCB) instead of a regular perfboard. The screen was also upgraded to show color, and the phone’s thickness was made to be half of version 1.</p>
+
+        <p style="margin-bottom: 1vh;">On the software side of things, we added features such as text messaging, the ability to store contacts, and games. We also looked into designing a custom IDE to make changing and uploading code to the phone easier for users.</p>
+
+        <p style="margin-bottom: 1vh;">Unfortunately, shortly into development, cellular providers started to end their 2G and 3G services, meaning we had to use the faster but more complex 4G (LTE) network. We weren’t able to meet our pricepoint with the new technology, and thus decided to shelf the project for the time being.</p>
+      </div>
+      <div class="content-right">
+        <div class="pbm2-slide">
+          <div class="numbertext">1 / 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/v2.JPG">
+          <div class="text">Phone by Mako v2 prototype</div>
+        </div>
+
+        <div class="pbm2-slide">
+          <div class="numbertext">2 / 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/v2case.JPG">
+          <div class="text">Phone by Mako v2 case: thinner, rounded edges</div>
+        </div>
+
+        <div class="pbm2-slide">
+          <div class="numbertext">3 / 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/parts.JPG">
+          <div class="text">Version 2 parts</div>
+        </div>
+
+        <div class="pbm2-slide">
+          <div class="numbertext">4 / 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_0912.PNG">
+          <div class="text">Concept of custom IDE</div>
+        </div>
+
+        <div class="pbm2-slide">
+          <div class="numbertext">5 / 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_0937.PNG">
+          <div class="text">Version 2 home screen with colored app icons</div>
+        </div>
+
+        <div class="pbm2-slide">
+          <div class="numbertext">6/ 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_1220.PNG">
+          <div class="text">New logo</div>
+        </div>
+
+        <div class="pbm2-slide">
+          <div class="numbertext">7 / 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_1553.JPG">
+          <div class="text">Version 2 home screen running on device</div>
+        </div>
+
+        <div class="pbm2-slide">
+          <div class="numbertext">8 / 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_1554.JPG">
+          <div class="text">Version 2 back, keypad not yet soldered</div>
+        </div>
+
+        <div class="pbm2-slide">
+          <div class="numbertext">9 / 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_1555.JPG">
+          <div class="text">Version 2 home screen running on device</div>
+        </div>
+
+        <div class="pbm2-slide">
+          <div class="numbertext">10 / 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_1562.JPG">
+          <div class="text">Call UI</div>
+        </div>
+
+        <div class="pbm2-slide">
+          <div class="numbertext">11 / 11 </div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_2120.JPG">
+          <div class="text">Collection of Phone by Mako cards, flyers, etc.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 6)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 6)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+  </div>
+    <div class="item" id="pbm">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Phone by Mako <span class="star">*</span></h1>
+
+        <p style="margin-bottom: 1vh;">This project started out as another typical “I want to build that” thought that popped into my head as I read a Make: Magazine. I bought the components, started soldering everything together, and attended a Maker Nexus summer camp to help me laser cut the wood enclosure.</p>
+
+        <p style="margin-bottom: 1vh;">Later that week, I visited my friend Ryland’s house to show him what I had built. After I showed him, we both had the same idea: sell it. However, since this phone was by no means a modern smartphone, we knew we couldn’t just sell it as is. Instead, we decided to sell it as a kit. That day, we submitted a Kickstarter application and began finalizing the project.</p>
+
+        <p style="margin-bottom: 1vh;">The electronics weren’t anything to be proud of: an Adafruit Feather FONA that has a built in 2G cellular chip, a janky keypad I soldered together, and a small OLED. The most difficult part was trying to convert all this fancy dancy engineer language into something other kids like us could understand.</p>
+
+        <p style="margin-bottom: 5vh;">After writing dozens of draft instruction manuals, 3D printing lots of prototypes, and adding features to the software, we finished our product, dubbed Phone by Mako. We presented our product to inverstors and ultimately sold around 15 units at our local farmer’s market, a business faire, and website.</p>
+        <div class="photo-button">
+          <a href="https://www.youtube.com/@phonebymako5949/featured" style="padding: 1.5vw 3vw; margin-right: 1vw;" class="white-button" target="_blank">WATCH VIDEOS&emsp;<i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.kickstarter.com/projects/rylandgoldman/phone-by-mako?ref=discovery&term=phone%20by%20mako&total_hits=1&category_id=334" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">SEE KICKSTARTER&emsp;<i class="fa-brands fa-kickstarter-k"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="pbm-slide">
+          <div class="numbertext">1 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0843.JPG">
+          <div class="text">Completed Phone by Mako</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">2 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0844.JPG">
+          <div class="text">Completed packaging</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">3 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0747.JPG">
+          <div class="text">Building first prototype</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">4 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0752.JPG">
+          <div class="text">Keypad</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">5 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0753.JPG">
+          <div class="text">Back of keypad, which held the Feather FONA</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">6 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0762.JPG">
+          <div class="text">First boot</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">7 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0779.JPG">
+          <div class="text">First packaging prototype</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">8 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0782.JPG">
+          <div class="text">First prototype of the phone, had to attach piece of wood at top because I mismeasured the screen height</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">9 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0792.JPG">
+          <div class="text">Next prototype, internals remained the same but phone was thinner and no longer had a "stacked" wood design</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">10 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0793.JPG">
+          <div class="text">Internals of the new prototype</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">11 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0797.JPG">
+          <div class="text">Thinner!</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">12 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0801.JPG">
+          <div class="text">First boot and call with Phone by Mako</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">13 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0809.JPG">
+          <div class="text">First generation software</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">14 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0810.JPG">
+          <div class="text">Kickstarter live!</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">15 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0811.png">
+          <div class="text">Presenting at startup summer camp, later presented to investors</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">16 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0891.JPG">
+          <div class="text">New software, cleaner look</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">17 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0962.JPG">
+          <div class="text">"The assembly line"</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">18 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0963.JPG">
+          <div class="text">Designing 3D printed holder for components</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">19 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0964.JPG">
+          <div class="text">Parts bins</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">20 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0979.PNG">
+          <div class="text">First version of our website</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">21 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_980.PNG">
+          <div class="text">First website on desktop</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">22 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0981.JPG">
+          <div class="text">Instruction manual iterations</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">23 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0993.JPG">
+          <div class="text">All laser cut parts laid out (I love this photo)</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">24 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_0994.jpg">
+          <div class="text">Completed cases and boxes</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">25 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_1019.JPG">
+          <div class="text">Assembly line! Checklist was there to ensure all kits had all parts necessary</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">26 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_1038.JPG">
+          <div class="text">Beta testing with friend, received valuable feedback and again changed instruction manuals</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">27 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_1067.JPG">
+          <div class="text">Printed a banner for the farmer's market</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">28 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_1068.JPG">
+          <div class="text">First showcase at farmer's market</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">29 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_1079.JPG">
+          <div class="text">First showcase at farmer's market</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">30 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_1080.JPG">
+          <div class="text">New website design</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">31 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_1110.JPG">
+          <div class="text">Shipping first order!</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">32 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_1111.JPG">
+          <div class="text">More kits ready to go</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">33 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_1499.JPG">
+          <div class="text">Second showcase at farmer's market</div>
+        </div>
+
+        <div class="pbm-slide">
+          <div class="numbertext">34 / 34</div>
+          <img loading="lazy" class="slideimg" src="/photos/pbm/IMG_2011.JPG">
+          <div class="text">Remaining cases (ft. PbM water bottle)</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1, 5)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 5)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+  </div>
+    <div class="item" id="sb">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh; font-family: sb; font-weight: 500;"><span style="color:#d1352a">Score</span><span style="color:#f2b933">board</span> <span class="star">*</span></h1>
+
+        <p style="margin-bottom: 1vh;">For my second advanced project, I decided to turn things up a notch and attempt to complete my childhood dream: to build my own scoreboard.</p>
+
+        <p style="margin-bottom: 1vh;">Going into this project, I had many goals I wanted to meet. The scoreboard had to have bar-style digits, it had to be wireless, and (unsurprisingly) it had to have a loud horn.</p>
+
+        <p style="margin-bottom: 1vh;">With these goals in mind, I began building the scoreboard. I laser cut the board face and cut out vinyl stickers for the home and guest labels. I went through dozens of diffuser designs before settling on a 3D printed design that I liked.</p>
+
+        <p style="margin-bottom: 1vh;">For electronics, I used an Arduino UNO for the board and a MEGA for the controller. I used WS2128B addressable LEDs for the digits, which let me control everything with only one data pin. Two nRF24L01 modules allowed the board and controller to talk to each other, being controlled by a keypad and character LCD.</p>
+
+        <p style="margin-bottom: 5vh;">This has to be one of my favorite projects because of the attention to detail in both the design and user experience, as well as how perfectly it matched my vision from the beginning.</p>
+        <div class="photo-button">
+          <a href="https://www.youtube.com/watch?v=zdeKpxZJ_U0" style="padding: 1.5vw 3vw;" class="white-button" target="_blank">WATCH VIDEO&emsp;<i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="sb-slide">
+          <div class="numbertext">1 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/sbfront.png">
+          <div class="text">Front of scoreboard</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">2 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/controller.png">
+          <div class="text">Controller for scoreboard</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">3 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0200.JPG">
+          <div class="text">Scoreboard outline drawn in Adobe Illustrator</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">4 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0229.jpeg">
+          <div class="text">Parts laid out</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">5 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0234.jpeg">
+          <div class="text">Bringing parts to TheShop.Build to laser cut front</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">6 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0238.jpeg">
+          <div class="text">Outline ready to be cut out</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">7 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0241.jpeg">
+          <div class="text">Cutting out scoreboard front</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">8 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0246.jpeg">
+          <div class="text">Laser cutter setup</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">9 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0257.jpeg">
+          <div class="text">Scoreboard front face cut</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">10 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0263.jpeg">
+          <div class="text">Parts laid out</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">11 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0268.jpeg">
+          <div class="text">Cutting out controller</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">12 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0283.jpeg">
+          <div class="text">Cutting out vinyl stickers</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">13 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0285.jpeg">
+          <div class="text">Vinyl sticker cut out</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">14 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0291.jpeg">
+          <div class="text">Cutting out acrylic diffusers (1st iteration)</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">15 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0294.jpeg">
+          <div class="text">Scoreboard controller cut out</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">16 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0300.jpeg">
+          <div class="text">Gluing LEDs to holders (1st iteration)</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">17 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0302.jpeg">
+          <div class="text">LED diffusers complete</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">18 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0304.jpeg">
+          <div class="text">Scoreboard painted</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">19 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0315.jpeg">
+          <div class="text">Controller keypad assembly</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">20 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0324.jpeg">
+          <div class="text">Vinyl stickers attached</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">21 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0325.JPG">
+          <div class="text">Acrylic diffusers glued, did not work well and many fell out</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">22 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0338.jpeg">
+          <div class="text">Switched to 3D printed diffusers, worked much better</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">23 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0344.jpeg">
+          <div class="text">3D printing diffusers</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">24 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0345.jpeg">
+          <div class="text">Finished diffusers</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">25 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0353.jpeg">
+          <div class="text">Individual LEDs were too difficult to hook up and didn't work as well as expected, switched to addressable LEDs</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">26 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0355.jpeg">
+          <div class="text">Finished new LED digits</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">27 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0356.JPG">
+          <div class="text">All digits complete and laid out</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">28 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0360.jpeg">
+          <div class="text">Diffuser iterations</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">29 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0404.jpeg">
+          <div class="text">First lighting test with LEDs</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">30 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0412.jpeg">
+          <div class="text">Scoreboard outside with sides glued</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">31 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0449.jpeg">
+          <div class="text">Power bank used to power different components, allowed for easy testing</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">32 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0500.JPG">
+          <div class="text">Controller half complete with keypad</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">33 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0504.jpeg">
+          <div class="text">Controller case complete</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">34 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_505.png">
+          <div class="text">First successful scoreboard LED test</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">35 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_1361.JPG">
+          <div class="text">First successful power up of scoreboard</div>
+        </div>
+
+        <div class="sb-slide">
+          <div class="numbertext">36 / 36</div>
+          <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_1365.JPG">
+          <div class="text">Scoreboard in use at middle school gym</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 4)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 4)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+  </div>
+    <div class="item" id="calc">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh; font-family: calc; font-weight: 400; color: #ceec21;"">Calculator</h1>
+
+        <p style="margin-bottom: 1vh;">This was my first major “solo” project. Before this, I had built many things at camps or modeled off videos, but I had never built something completely from scratch.</p>
+
+        <p style="margin-bottom: 1vh;">In February 2019, I got the idea to make a calculator. I wanted to use mechanical switches to operate it, as it would be really cool and satisfying to use. Despite not using them in the end, I still used similar switches that also had a tactile feel.</p>
+
+        <p style="margin-bottom: 1vh;">The case was a regular utility box I found at Frys Electronics. In fact, many of the parts I bought from Frys, as I’ve always preferred buying things in person as opposed to online. There weren’t many parts to this project; only a few buttons, a screen, an Arduino, and a 9 volt battery.</p>
+
+        <p style="margin-bottom: 1vh;">Everything was operated by an Arduino UNO. Key presses were imputed through a four by four keypad, and data was displayed on a small character LCD. Since I didn’t have room for a reset button, I used the “=” key as a reset button as well.</p>
+      </div>
+      <div class="content-right">
+        <div class="calc-slide">
+          <div class="numbertext">1 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/calc/calc.jpg">
+          <div class="text">Finished calculator</div>
+        </div>
+
+        <div class="calc-slide">
+          <div class="numbertext">2 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/calc/IMG_0001.JPG">
+          <div class="text">3D printing key caps</div>
+        </div>
+
+        <div class="calc-slide">
+          <div class="numbertext">3 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/calc/IMG_0005.JPG">
+          <div class="text">Building the keypad</div>
+        </div>
+
+        <div class="calc-slide">
+          <div class="numbertext">4 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/calc/IMG_0009.JPG">
+          <div class="text">To paint the numbers and symbols, I used acrylic paint and a paper clip</div>
+        </div>
+
+        <div class="calc-slide">
+          <div class="numbertext">5 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/calc/IMG_0164.jpeg">
+          <div class="text">Completed keypad</div>
+        </div>
+
+        <div class="calc-slide">
+          <div class="numbertext">6 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/calc/IMG_0167.jpeg">
+          <div class="text">Calculator with blue LCD (that didn't work)</div>
+        </div>
+
+        <div class="calc-slide">
+          <div class="numbertext">7 / 7</div>
+          <img loading="lazy" class="slideimg" src="/photos/calc/IMG_0169.jpeg">
+          <div class="text">Calculator on workbench</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 3)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 3)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+  </div>
+    <div class="item" id="binary">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Binary Computer</h1>
+
+        <p style="margin-bottom: 1vh;">This was my first project that had some level of complexity to it. I followed a tutorial by The 8 Bit Guy on how to build the device, and while it didn’t come out perfect, I was super proud of it.</p>
+
+        <p style="margin-bottom: 1vh;">The “computer” is really just a text terminal which takes advantage of the character LCD’s built-in microprocessor to display text based on binary input.</p>
+
+        <p style="margin-bottom: 1vh;">To use the device, you can flip the right-most switch above the “enter” button to switch between instruction and text mode. Instruction mode allows you to initialize the display, change where the text is displayed, and a few other commands. Text mode just outputs numbers and letters based on the binary input.</p>
+
+        <p style="margin-bottom: 1vh;">After building this project, I shared it with some of my teachers and even gave in-class presentations about how the device worked.</p>
+      </div>
+      <div class="content-right">
+        <div class="binary-slide">
+          <div class="numbertext">1 / 3</div>
+          <img class="slideimg" src="/bg/timer.png">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="binary-slide">
+          <div class="numbertext">2 / 3</div>
+          <img class="slideimg" src="/bg/watch.png">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="binary-slide">
+          <div class="numbertext">3 / 3</div>
+          <img class="slideimg" src="/bg/pbm.png">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 2)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 2)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+  </div>
+    <div class="item" id="museum">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Computer Museum</h1>
+
+        <p style="margin-bottom: 1vh;">As a kid, I watched The 8 Bit Guy on YouTube all the time. I especially liked watching his vintage computer restoration videos, and so I decided to collect and restore computers myself as well.</p>
+
+        <p style="margin-bottom: 1vh;">My collection started when my one of the 4th grade teachers at my school gifted me two iMac G3s (yes, the bubble iMacs). I also received two typewriters from my grandmother, and later a PowerBook 5300cs from my actual 4th grade teacher.</p>
+
+        <p style="margin-bottom: 1vh;">From there, I purchased an original Macintosh and Apple IIc on auction for cheap. While on vacation, the house across the street from where we were staying had another iMac G3 for sale, and so I bought it for $5 and brought it back to show my horrified parents (”another computer, WHY?”).</p>
+
+        <p style="margin-bottom: 1vh;">I also bought an original iPad, second and third generation iPhones, an Apple IIe, IBM typewriter, Macintosh IIci, PowerBook G4, and PowerMac G4.</p>
+
+        <p style="margin-bottom: 1vh;">While these computers are only on display in my room at the moment, I hope to showcase them somwehere later.</p>
+      </div>
+      <div class="content-right">
+        <div class="museum-slide">
+          <div class="numbertext">1 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/museum/IMG_0147.jpeg">
+          <div class="text">Some computers lined up (Macintosh, IBM Typewriter, Apple IIe)</div>
+        </div>
+
+        <div class="museum-slide">
+          <div class="numbertext">2 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/museum/mac.JPG">
+          <div class="text">Macintosh 512k</div>
+        </div>
+
+        <div class="museum-slide">
+          <div class="numbertext">3 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/museum/IMG_0155.jpeg">
+          <div class="text">Macintosh 512k after floppy drive replacement and repair</div>
+        </div>
+
+        <div class="museum-slide">
+          <div class="numbertext">4 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/museum/IMG_0141.jpeg">
+          <div class="text">Apple IIc after cleaning motherboard</div>
+        </div>
+
+        <div class="museum-slide">
+          <div class="numbertext">5 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/museum/IMG_0135.jpeg">
+          <div class="text">Restoring case on Apple IIc</div>
+        </div>
+
+        <div class="museum-slide">
+          <div class="numbertext">6 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/museum/iic.JPG">
+          <div class="text">Apple IIc post restoration (color difference between the case and power supply)</div>
+        </div>
+
+        <div class="museum-slide">
+          <div class="numbertext">7 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/museum/iie.JPG">
+          <div class="text">Apple IIe</div>
+        </div>
+
+        <div class="museum-slide">
+          <div class="numbertext">8 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/museum/IMG_0011.jpeg">
+          <div class="text">Original iPad</div>
+        </div>
+
+        <div class="museum-slide">
+          <div class="numbertext">9 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/museum/restore.JPG">
+          <div class="text">Tank where case restorations were done using UV light and hydrogen peroxide</div>
+        </div>
+
+        <div class="museum-slide">
+          <div class="numbertext">10 / 10</div>
+          <img loading="lazy" class="slideimg" src="/photos/museum/restore2.JPG">
+          <div class="text">Inside the restoration tank (process also called retrobright)</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 1)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+  </div>
+    <div class="item" id="early">
+      <div class="content-left">
+        <h1 style="margin-top: 0px; margin-bottom: 1vh;">Early Projects</h1>
+
+        <p style="margin-bottom: 1vh;">I was a maker since day one.</p>
+
+        <p style="margin-bottom: 1vh;">When I was little, my two parents, who were both doctors, gifted me a toy doctor kit. Instead of using it to, you know, do doctor stuff, I opted to turn it into a toilet. I used tape and construction paper to make the handle, and used the bulb from the blood pressure monitor to act as the water level detector. While this toilet didn’t actually work (whew), it still was a prelude to what was to come.</p>
+
+        <p style="margin-bottom: 1vh;">As I grew up, I built lots of small things. I made model rockets out of cardboard; some to launch at sites, others to deploy a parachute that I would test at my local park.</p>
+
+        <p style="margin-bottom: 1vh;">In second grade, I “started” my first company: Timetronics Scoreboards. I designed the website in... Microsoft Word, and made the scoreboards out of cardboard and aluminum foil. Despite not fully working, they did have a functional horn.</p>
+
+        <p style="margin-bottom: 1vh;">For the next few years, I kept building and tinkering with things, like boats, projectors, and computers.</p>
+      </div>
+      <div class="content-right">
+        <div class="early-slide">
+          <div class="numbertext">1 / 3</div>
+          <img class="slideimg" src="/bg/timer.png">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="early-slide">
+          <div class="numbertext">2 / 3</div>
+          <img class="slideimg" src="/bg/watch.png">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="early-slide">
+          <div class="numbertext">3 / 3</div>
+          <img class="slideimg" src="/bg/pbm.png">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 0)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+  </div>
+
+    <div class="scroll">
+      <div class="scroll-bar">
+        <span class="year" id="year">2024</span>
+        <div></div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="/projects/slideshow.js"></script>
+  <script>
+    const container = document.getElementById('scroll-container');
+    const scrollBar = document.querySelector('.scroll-bar div');
+    const scrollYear = document.querySelector('.scroll-bar .year');
+    
+    container.onscroll = function() {
+      const scrollTop = container.scrollTop;
+      const scrollHeight = container.scrollHeight - container.clientHeight;
+      const scrollPercentage = ((scrollTop / scrollHeight) * (container.clientWidth - scrollBar.offsetWidth)) * 0.8;
+
+      scrollBar.style.transform = `translateX(${scrollPercentage}px)`;
+      scrollYear.style.transform = `translateX(${scrollPercentage}px)`;
+    };
+  </script>
+  
+  <script>
+    const anchor = document.getElementById('year');
+
+    container.addEventListener('scroll',() => {
+      const scrollTop = container.scrollTop;
+      const scrollHeight = container.scrollHeight - container.clientHeight;
+      const scrollPercentage = ((scrollTop / scrollHeight) * (container.clientWidth - scrollBar.offsetWidth)) * 0.8;
+      const offset = scrollTop / scrollHeight;
+      
+      if (offset < .134) {
+        anchor.textContent = "2024";
+
+      } else if (offset < .170) {
+        anchor.textContent = "2023";
+
+      } else if (offset < .207) {
+        anchor.textContent = "2022";
+
+      } else if (offset < .503) {
+        anchor.textContent = "2021";
+
+      } else if (offset < .726) {
+        anchor.textContent = "2020";
+
+      } else if (offset < .877) {
+        anchor.textContent = "2019";
+
+      } else if (offset < .950) {
+        anchor.textContent = "2018";
+
+      } else {
+        anchor.textContent = "<2018";
+      }
+    })
+  </script>
+  
+</body>
+
+</html>

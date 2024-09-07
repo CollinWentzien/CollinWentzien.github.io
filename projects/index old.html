@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collin W  |  Projects</title>
+  <script src="https://kit.fontawesome.com/2c47143655.js" crossorigin="anonymous"></script>
+  <style>
+    .container {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="title-bar">
+    <a href="/" class="titlebutton">Home</a>
+    <a href="/projects" class="titlebutton selected">Projects</a>
+    <a href="/links" class="titlebutton">Links</a>
+  </div>
+  
+  <div class="container">
+    <div class="content-left">
+      <h1 style="margin-top: 0px;">Hello</h1>
+      <p>This is a paragraph under the header.</p>
+      <div class="photo-button">
+        <button style="padding: 1.5vw 3vw;" class="white-button" onclick="myProjects()">LEARN MORE&emsp;<i
+            class="fa-solid fa-arrow-up-right-from-square"></i></i></button>
+      </div>
+    </div>
+    <div class="content-right">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="/bg/timer.png">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="/bg/watch.png">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="/bg/pbm.png">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script src="/projects/slideshow.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>
