@@ -26,11 +26,6 @@ body {
   white-space: pre;
 }
 
-body {
-  font-family: 'Gotham', sans-serif;
-  background-color: #1A1A1A;
-}
-
 h1 {
   color: white;
   font-size: 6vw;
@@ -54,46 +49,6 @@ p {
 
 .accent {
   color: #1583FF;
-}
-
-.blue-button {
-  font-family: 'Gotham', sans-serif;
-  font-weight: 500;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #1583FF;
-  color: white;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.5vw;
-}
-
-.white-button {
-  font-family: 'Gotham', sans-serif;
-  font-weight: 500;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4D4D4D;
-  color: white;
-  border: 0px solid #4D4D4D;
-  border-radius: 100px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.5vw;
-}
-
-.blue-button:hover {
-  background-color: #439afe;
-  transition: 0.3s;
-}
-
-.white-button:hover {
-  background-color: #6b6b6b;
-  transition: 0.3s;
 }
 
 .button-grid {
@@ -146,7 +101,6 @@ p {
   cursor: pointer;
   border-radius: 1000px;
   background-color: #282828;
-  font-family: 'Gotham', sans-serif;
   font-weight: 500;
   font-size: 1.7vw;
   padding: 0;
