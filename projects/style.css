@@ -2,18 +2,11 @@
   box-sizing: border-box
 }
 
-@font-face {
-    font-family: splitflap;
-    src: url(/fonts/split-flap-display.ttf);
-}
-
-.container {
-  max-height: 100vh;
+html {
+  height: 100%;
   margin: 0;
   scroll-snap-type: y mandatory;
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .item {
